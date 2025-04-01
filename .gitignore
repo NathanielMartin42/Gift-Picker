@@ -150,4 +150,4 @@ cython_debug/
 gift-env/
 
 # oath creds
-oath2_creds.json
+oauth2_creds.json
