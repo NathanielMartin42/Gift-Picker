@@ -1,7 +1,8 @@
 from dataclasses import dataclass, field
 import csv
 import argparse
-import smtplib, ssl
+import smtplib
+import ssl
 from email.message import EmailMessage
 from pathlib import Path
 from tkinter import Tk
