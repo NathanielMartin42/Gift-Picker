@@ -149,5 +149,5 @@ cython_debug/
 # Project envs
 gift-env/
 
-# oath creds
-oauth2_creds.json
+# Martin Champion stuff
+MarChampCousins/
