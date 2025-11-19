@@ -76,10 +76,11 @@ class Santa:
         """
         Sends email of which recipient a person will give gifts to.
         """
-        yag = yagmail.SMTP("secretsantamailerchampmar@gmail.com", oauth2_file="./oauth2_creds.json")
+        password = "" # Fill in with application specific password from gmail account
+        yag = yagmail.SMTP("secretsantamailerchampmar@gmail.com", password)
 
         for person in self._finished:
-            yag.send(person.email_addr, "Secret Santa 2024", f"Hello {person.name}, you are giving a gift to {person.recipient} for this year's Secret Santa.")
+            yag.send(person.email_addr, "Secret Santa 2025", f"Hello {person.name}, you are giving a gift to {person.recipient} for this year's Secret Santa.")
 
 
     def __repr__(self) -> str:
